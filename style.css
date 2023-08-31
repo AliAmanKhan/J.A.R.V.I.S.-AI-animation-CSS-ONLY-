@@ -88,28 +88,10 @@
      transform: translate(-50%, -100%);
  }
 
- .degBox::before {
-     content: "";
-     position: absolute;
-     transform-origin: left bottom;
-     height: 50%;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -100%);
- }
-
  #content {
      background-color: #67fffe;
      background-image: linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.25) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.25) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25) 76%, transparent 77%, transparent);
      background-size: 17px 17px;
- }
-
- .degreeCircle {
-     height: 55%;
-     width: 55%;
-     border: 2px solid #67fffe;
-     position: relative;
-     border-radius: 50%;
  }
 
  .circleA {
