@@ -11,11 +11,8 @@
 
  .text {
      position: absolute;
-     /* top: 50%;
-    left: 50%; */
      font-size: 24px;
      color: black;
-     /* animation: rotate 10s reverse infinite; */
  }
 
  .center {
@@ -43,22 +40,12 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     /* transform: rotate(45deg); */
-     /* border: 2px solid #67fffe; */
      border-radius: 50%;
      animation-name: rotate, pulse;
      animation-duration: 5s, 1s;
      animation-timing-function: linear;
      animation-iteration-count: infinite;
  }
-
- /* .pulse{
-    animation: pulse 1s linear infinite;;
- }
-
- .rotate{
-     animation:  rotate 5s linear infinite;
- } */
 
  .circle-segment {
      position: absolute;
@@ -67,7 +54,6 @@
      border-style: solid;
      border-radius: 50%;
      border-width: 2px;
-     /* border-color: #67fffe; */
  }
 
  .segment-1 {
@@ -87,44 +73,6 @@
      border-width: 8px;
      border-color: #67fffe transparent #67fffe transparent;
  }
-
-   
- @keyframes pulse {
-    0%, 100% {
-      height: 100%;
-      width: 100%;
-    }
-    50% {
-        height: 105%;
-        width: 105%;
-    }
-  }
-
-/* 
- @keyframes rotateWithPulse {
-     0% {
-         transform: rotate(0deg);
-     }
-     2%{
-        transform: scale(1.05);
-     }
-     5%{
-        transform: scale(1);
-     }
-
-     85%{
-        transform: scale(1);
-     }
-     87%{
-        transform: scale(1.05);
-     }
-     90%{
-        transform: scale(1);
-     }
-     100% {
-         transform: rotate(360deg);
-     }
- } */
 
  .segment-1::before,
  .segment-2::before,
@@ -164,83 +112,16 @@
      border-radius: 50%;
  }
 
- /* .degBox {
-     position: absolute;
-     /* height: 35%;
-    width: 100%;
-    color: #67fffe;
-    border: 1px solid;
-    border-color: transparent transparent #67fffe transparent;
-    transform: rotate(90deg); 
-     width: 2px;
-     height: 50%;
-     background-color: #67fffe;
-     transform-origin: center bottom;
-     top: 50%;
-     left: 50%;
-     /* Adjusted to be outside the circle 
-     transform: translate(-100%, -50%);
-     /* Adjusted to be outside the circle 
- } */
-
- .one {
-     transform: rotate(0deg);
- }
-
- .two {
-     transform: rotate(36deg);
- }
-
- .three {
-     transform: rotate(72deg);
- }
-
- .four {
-     transform: rotate(108deg);
- }
-
- .five {
-     transform: rotate(144deg);
- }
-
- .six {
-     transform: rotate(180deg);
- }
-
- .seven {
-     transform: rotate(216deg);
- }
-
- .eight {
-     transform: rotate(252deg);
- }
-
- .nine {
-     transform: rotate(288deg);
- }
-
- .ten {
-     transform: rotate(324deg);
- }
-
- /* .designC{
-    height: 62%;
-    width: 62%;
-    border-radius: 50%;
-    border: 10px solid #67fffe;
-    
-    border-inline: dashed #67fffe;
- } */
-
  .circleA {
      height: 55%;
      width: 55%;
  }
 
- .circleB{
-    height: 57%;
-    width: 57%;
+ .circleB {
+     height: 57%;
+     width: 57%;
  }
+
  .normalCircle {
      position: absolute;
      border-radius: 50%;
@@ -257,343 +138,255 @@
      transform: rotate(30deg);
      animation: rotate 2s alternate-reverse infinite;
  }
+
  .circleOutB {
-    position: absolute;
-    height: 55%;
-    width: 55%;
-    border: 10px solid;
-    border-color: #67ffff8e transparent transparent transparent;
-    border-radius: 50%;
-    transform: rotate(90deg);
-    animation: rotate 5s alternate-reverse infinite;
-}
- @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.dash{
-    position: absolute;
-    height: 71%;
-    width: 71%;
-    border: 6px dashed;
-    border-radius: 50%;
-    border-color: transparent #67fffe transparent transparent;
-}
-
-.nearDashed{
-    height: 62%;
-    width: 62%;
-}
-.dashed{
-    height: 64%;
-    width: 64%;
-    border: dotted #67fffe;
-    animation: rotate 25s linear infinite;
-    animation-direction: reverse;
-}
-.height80{
-    height: 80%;
-    width: 80%;
-}
-/* .height75{
-    height: 75%;
-    width: 75%;
-} */
-.componentD{
-    position: absolute;
-    border-radius: 50%;
-}
-.ddA{
-    border: 1rem solid;
-    border-color: transparent transparent transparent #67fffe;
-    transform: rotate(10deg);
-    height: 78%;
-    width: 78%;
-}
-
-.ddB{
-    border: 1.5rem solid;
-    border-color: transparent transparent transparent #67fffe;
-    /* transform: rotate(10deg); */
-    height: 76%;
-    width: 76%;
-
-}
-
-.ddC{
-    border: 1rem solid;
-    border-color: transparent transparent transparent #67fffe;
-    transform: rotate(-10deg);
-    height: 78%;
-    width: 78%; 
-}
-.ddD{
-    border: 0.85rem solid;
-    border-color: transparent transparent transparent #062136;
-    transform: rotate(10deg);
-    height: 79%;
-    width: 79%;
-}
-
-.ddE{
-    border: 1.3rem solid;
-    border-color: transparent transparent transparent #062136;
-    /* transform: rotate(10deg); */
-    height: 77%;
-    width: 77%;
-
-}
-
-.ddF{
-    border: 0.85rem solid;
-    border-color: transparent transparent transparent #062136;
-    transform: rotate(-10deg);
-    height: 79%;
-    width: 79%; 
-}
-
-.dashedD{
-    /* border-color: transparent transparent transparent #67fffe; */
-    border-left: 4px dashed #67fffe;
-    border-radius: 50%;
-    height: 87%;
-    width: 87%;
-    z-index: 99;
-    position: absolute;
-}
-.dotD{
-    position: absolute;
-    height: 80%;
-    width: 80%;
-    /* border-left: 3px dotted; */
-    /* border-left-style: dotted; */
-    border: 5px dotted;
-    border-radius: 50%;
-    border-color: transparent transparent transparent #67fffe;
-    border-image-slice: 1;
-    /* border-width: 5px; */
-    /* border-left: 0;
-    border-right: 0;
-    border-bottom: 0; */
-    /* border-image-source: linear-gradient(to left, transparent, #67fffe); */
-}
-
-.plain{
-    position: absolute;
-    height: 80%;
-    width: 80%;
-    border: 3px solid;
-    /* border-top: 0;
-    border-left: 0;
-    border-bottom: 0; */
-    /* border-right: 3px; */
-    border-color: transparent #67fffe transparent transparent;
-    /* border-image: linear-gradient(to bottom, transparent, #67fffe); */
-    border-radius: 50%;
-    animation: rotate 1s linear infinite;
-    z-index: -1;
-}
-
-/* after designer component  */
-.dots{
-    position: absolute;
-    height: 86%;
-    width: 86%;
-    border: 2px dashed;
-    border-color: transparent #67fffe transparent transparent;
-    border-radius: 50%;
-    transform: rotate(-30deg);
-    animation: tickTock 3s linear infinite;
-}
-@keyframes tickTock {
-    0%{
-        transform: rotate(-30deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-30deg);
-    }
-}
-
-.outerArea{
-    /* position: absolute; */
-    height: 130%;
-    width: 130%;
-}
-
-.outerA{
-    position: absolute;
-    border: 5px dashed;
-    border-color: transparent #67fffe transparent transparent;
-    border-radius: 50%;
-}
-.outerB{
-    position: absolute;
-    border: 5px solid;
-    border-color: transparent #67ffffc5 transparent transparent;
-    border-radius: 50%;
-}
-
-.verticle{
-    position: absolute;
-    height: 125%;
-    width: 125%;
-    border: 2px solid #67fffe;
-    border-radius: 50%;
-    animation-name: rotate, vertRotate;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: alternate-reverse;
-    z-index: -2;
-}
-.vertDash{
-    position: absolute;
-    height: 123%;
-    width: 123%;
-    border: 2px dashed goldenrod;
-    border-radius: 50%;
-    animation-name: rotate, vertRotate;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: -2;
-}
-
-.a{
-    
-    animation-duration: 15s;
-    animation-direction: reverse;
-}
-.b{
-    animation-duration: 10s;
-    animation-direction: alternate-reverse;
-}
-.c{
-    animation-duration: 7s;
-    animation-direction: normal;
-}
-.d{
-    animation-duration: 17s;
-    animation-direction: alternate-reverse;
-}
-
-@keyframes vertRotate {
-    0%{
-        width: 125%;
-    }
-    50%{
-        width: 115%;
-    }
-    100%{
-        width: 125%;
-    }
-}
-.last{
-    position: absolute;
-    height: 150%;
-    width: 150%;
-    border: 2px dashed goldenrod;
-    border-radius: 50%;
-    animation: rotate 7s linear infinite;
-}
-/* .class{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.class::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #ff9900, #66ccff);
-    border-left: 2px dotted transparent;
-    border-radius: 50%;
-    z-index: -1;
-} */
- /* .circleOutB {
      position: absolute;
-     height: 60%;
-     width: 60%;
+     height: 55%;
+     width: 55%;
      border: 10px solid;
+     border-color: #67ffff8e transparent transparent transparent;
      border-radius: 50%;
+     transform: rotate(90deg);
+     animation: rotate 5s alternate-reverse infinite;
+ }
+
+ .dash {
+     position: absolute;
+     height: 71%;
+     width: 71%;
+     border: 6px dashed;
+     border-radius: 50%;
+     border-color: transparent #67fffe transparent transparent;
+ }
+
+ .nearDashed {
+     height: 62%;
+     width: 62%;
+ }
+
+ .dashed {
+     height: 64%;
+     width: 64%;
+     border: dotted #67fffe;
+     animation: rotate 25s linear infinite;
+     animation-direction: reverse;
+ }
+
+ .height80 {
+     height: 80%;
+     width: 80%;
+ }
+
+ .componentD {
+     position: absolute;
+     border-radius: 50%;
+ }
+
+ .ddA {
+     border: 1rem solid;
+     border-color: transparent transparent transparent #67fffe;
+     transform: rotate(10deg);
+     height: 78%;
+     width: 78%;
+ }
+
+ .ddB {
+     border: 1.5rem solid;
+     border-color: transparent transparent transparent #67fffe;
+     height: 76%;
+     width: 76%;
+
+ }
+
+ .ddC {
+     border: 1rem solid;
+     border-color: transparent transparent transparent #67fffe;
+     transform: rotate(-10deg);
+     height: 78%;
+     width: 78%;
+ }
+
+ .ddD {
+     border: 0.85rem solid;
+     border-color: transparent transparent transparent #062136;
+     transform: rotate(10deg);
+     height: 79%;
+     width: 79%;
+ }
+
+ .ddE {
+     border: 1.3rem solid;
+     border-color: transparent transparent transparent #062136;
+     height: 77%;
+     width: 77%;
+
+ }
+
+ .ddF {
+     border: 0.85rem solid;
+     border-color: transparent transparent transparent #062136;
+     transform: rotate(-10deg);
+     height: 79%;
+     width: 79%;
+ }
+
+ .dashedD {
+     border-left: 4px dashed #67fffe;
+     border-radius: 50%;
+     height: 87%;
+     width: 87%;
+     z-index: 99;
+     position: absolute;
+ }
+
+ .dotD {
+     position: absolute;
+     height: 80%;
+     width: 80%;
+     border: 5px dotted;
+     border-radius: 50%;
+     border-color: transparent transparent transparent #67fffe;
      border-image-slice: 1;
-     border-width: 5px;
-     border-left: 0;
-     border-right: 0;
-     border-bottom: 0;
-     border-image-source: linear-gradient(to left, transparent, #67fffe);
-     /* border-color: #67ffff8e transparent transparent transparent;
-     transform: rotate(-90deg);
- } */
+ }
 
- /* .one{
-    transform: rotate(10deg);
-}
-.two{
-    transform: rotate(20deg);
-}
-.three{
-    transform: rotate(30deg);
-}
-.four{
-    transform: rotate(40deg);
-}
-.five{
-    transform: rotate(50deg);
-}
-.six{
-    transform: rotate(60deg);
-}
-.seven{
-    transform: rotate(70deg);
-}
-.eight{
-    transform: rotate(80deg);
-}
-.nine{
-    transform: rotate(90deg);
-}
-.ten{
-    transform: rotate(100deg);
-} */
- /* 
-  .circle-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    animation: rotate 10s linear infinite;
-  }
-  
-  .circle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #67fffe;
-    border-radius: 50%;
-    animation: pulse 1s ease-in-out infinite;
-  }
-  
-  .text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: #67fffe;
-  }
+ .plain {
+     position: absolute;
+     height: 80%;
+     width: 80%;
+     border: 3px solid;
+     border-color: transparent #67fffe transparent transparent;
+     border-radius: 50%;
+     animation: rotate 1s linear infinite;
+     z-index: -1;
+ }
 
+ /* after designer component  */
+ .dots {
+     position: absolute;
+     height: 86%;
+     width: 86%;
+     border: 2px dashed;
+     border-color: transparent #67fffe transparent transparent;
+     border-radius: 50%;
+     transform: rotate(-30deg);
+     animation: tickTock 3s linear infinite;
+ }
 
-   */
+ .outerArea {
+     /* position: absolute; */
+     height: 130%;
+     width: 130%;
+ }
+
+ .outerA {
+     position: absolute;
+     border: 5px dashed;
+     border-color: transparent #67fffe transparent transparent;
+     border-radius: 50%;
+ }
+
+ .outerB {
+     position: absolute;
+     border: 5px solid;
+     border-color: transparent #67ffffc5 transparent transparent;
+     border-radius: 50%;
+ }
+
+ .verticle {
+     position: absolute;
+     height: 125%;
+     width: 125%;
+     border: 2px solid #67fffe;
+     border-radius: 50%;
+     animation-name: rotate, vertRotate;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-duration: 5s;
+     animation-direction: alternate-reverse;
+     z-index: -2;
+ }
+
+ .vertDash {
+     position: absolute;
+     height: 123%;
+     width: 123%;
+     border: 2px dashed goldenrod;
+     border-radius: 50%;
+     animation-name: rotate, vertRotate;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     z-index: -2;
+ }
+
+ .a {
+
+     animation-duration: 15s;
+     animation-direction: reverse;
+ }
+
+ .b {
+     animation-duration: 10s;
+     animation-direction: alternate-reverse;
+ }
+
+ .c {
+     animation-duration: 7s;
+     animation-direction: normal;
+ }
+
+ .d {
+     animation-duration: 17s;
+     animation-direction: alternate-reverse;
+ }
+
+ @keyframes vertRotate {
+     0% {
+         width: 125%;
+     }
+
+     50% {
+         width: 115%;
+     }
+
+     100% {
+         width: 125%;
+     }
+ }
+
+ @keyframes tickTock {
+     0% {
+         transform: rotate(-30deg);
+     }
+
+     50% {
+         transform: rotate(0deg);
+     }
+
+     100% {
+         transform: rotate(-30deg);
+     }
+ }
+
+ @keyframes rotate {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ @keyframes pulse {
+
+     0%,
+     100% {
+         height: 100%;
+         width: 100%;
+     }
+
+     50% {
+         height: 105%;
+         width: 105%;
+     }
+ }
