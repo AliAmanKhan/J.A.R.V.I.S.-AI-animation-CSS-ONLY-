@@ -502,12 +502,7 @@
     width: 150%;
     border: 2px dashed goldenrod;
     border-radius: 50%;
-    animation-name: rotate;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: -2;
-    animation-duration: 7s;
-    animation-direction: normal;
+    animation: rotate 7s linear infinite;
 }
 /* .class{
     height: 100%;
